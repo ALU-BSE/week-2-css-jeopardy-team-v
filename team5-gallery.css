@@ -1,0 +1,58 @@
+/* Team 5: Gallery/Contact Section CSS */
+/* Style the gallery and contact area with your team's creativity! */
+
+/* Example starter styles */
+.gallery-contact-section {
+    /* TODO: Add your styles here */
+}
+
+.gallery-container {
+    margin-bottom: 20px;
+    /* TODO: Add your styles here */
+}
+
+.gallery-item {
+    margin-bottom: 15px;
+    /* TODO: Add your styles here */
+}
+
+.gallery-img {
+    max-width: 100%;
+    /* TODO: Add your styles here */
+}
+
+.image-caption {
+    /* TODO: Add your styles here */
+}
+
+.contact-container {
+    /* TODO: Add your styles here */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* TODO: Add your styles here */
+}
+
+.form-label {
+    display: block;
+    /* TODO: Add your styles here */
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 8px;
+    /* TODO: Add your styles here */
+}
+
+.submit-button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    /* TODO: Add your styles here */
+}
+
+/* Don't forget to add hover effects! */
+.submit-button:hover {
+    /* TODO: Add your styles here */
+}

@@ -1,0 +1,39 @@
+/* Team 4: Projects Section CSS */
+/* Style the projects area with your team's creativity! */
+
+/* Example starter styles */
+.projects-section {
+    margin-bottom: 20px;
+    /* TODO: Add your styles here */
+}
+
+.project-card {
+    margin-bottom: 15px;
+    /* TODO: Add your styles here */
+}
+
+.project-title {
+    /* TODO: Add your styles here */
+}
+
+.project-description {
+    /* TODO: Add your styles here */
+}
+
+.project-tags {
+    /* TODO: Add your styles here */
+}
+
+.tag {
+    /* TODO: Add your styles here */
+}
+
+.project-link {
+    text-decoration: none;
+    /* TODO: Add your styles here */
+}
+
+/* Don't forget to add hover effects! */
+.project-link:hover {
+    /* TODO: Add your styles here */
+}

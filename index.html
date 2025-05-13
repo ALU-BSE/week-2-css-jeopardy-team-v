@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals Team Game</title>
+
+    <!-- Link all team CSS files -->
+    <link rel="stylesheet" href="team1-header.css">
+    <link rel="stylesheet" href="team2-navigation.css">
+    <link rel="stylesheet" href="team3-profile.css">
+    <link rel="stylesheet" href="team4-projects.css">
+    <link rel="stylesheet" href="team5-gallery.css">
+
+    <style>
+        /* Global styles - DO NOT MODIFY */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Game Instructions */
+        .game-instructions {
+            background-color: #f8f9fa;
+            border: 2px dashed #6c757d;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .game-instructions h2 {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .game-instructions ul {
+            margin-left: 20px;
+        }
+
+        /* Section labels - DO NOT MODIFY THESE */
+        .section-label {
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #495057;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-instructions">
+        <h2>CSS Fundamentals Team Game - Instructions</h2>
+        <p>Welcome to the CSS Fundamentals Team Game! Each team is responsible for styling a specific section of this webpage.</p>
+
+        <h3>Team Assignments:</h3>
+        <ul>
+            <li><strong>Team 1:</strong> Header Section - Style the main heading and tagline</li>
+            <li><strong>Team 2:</strong> Navigation Menu - Style the navigation links</li>
+            <li><strong>Team 3:</strong> Profile Section - Style the about me content and skills</li>
+            <li><strong>Team 4:</strong> Projects Section - Style the project cards</li>
+            <li><strong>Team 5:</strong> Gallery/Contact Section - Style the image gallery and contact form</li>
+        </ul>
+
+        <h3>Allowed CSS Properties:</h3>
+        <ul>
+            <li>Colors (text color, background color)</li>
+            <li>Fonts (font-family, font-size, font-weight, etc.)</li>
+            <li>Text effects (text-align, text-decoration, text-transform, etc.)</li>
+            <li>Padding and margin</li>
+            <li>Borders and border-radius</li>
+            <li>Backgrounds (colors, gradients, images)</li>
+            <li>Hover effects</li>
+            <li>Transitions</li>
+            <li>Pseudo-classes (:hover, :focus, :active, etc.)</li>
+        </ul>
+
+        <h3>Restricted CSS Properties:</h3>
+        <ul>
+            <li>Flexbox (display: flex)</li>
+            <li>CSS Grid (display: grid)</li>
+            <li>Floating elements (float)</li>
+            <li>Positioning (position: absolute, relative, etc.)</li>
+            <li>Width and height for centering purposes</li>
+        </ul>
+
+        <p>Good luck and have fun styling your sections!</p>
+    </div>
+
+    <!-- TEAM 1: HEADER SECTION -->
+    <div class="section-label">Team 1: Header Section</div>
+    <header id="team1-header" class="header-section">
+        <h1 class="main-title">Portfolio of Mr. Vibe</h1>
+        <p class="tagline">Web Developer & UI Designer</p>
+        <div class="header-decoration"></div>
+    </header>
+
+    <!-- TEAM 2: NAVIGATION SECTION -->
+    <div class="section-label">Team 2: Navigation Section</div>
+    <nav id="team2-nav" class="nav-section">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- TEAM 3: PROFILE SECTION -->
+    <div class="section-label">Team 3: Profile Section</div>
+    <section id="team3-profile" class="profile-section">
+        <div id="about" class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="profile-img-container">
+                <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-img">
+            </div>
+            <p class="bio-text">
+                Hello! I'm Vibe, a passionate web developer with a keen eye for design and user experience.
+                I enjoy creating clean, responsive, and accessible websites that deliver great user experiences.
+                When I'm not coding, you can find me hiking, reading, or experimenting with new technologies.
+            </p>
+        </div>
+
+        <div id="skills" class="skills-container">
+            <h2 class="section-title">My Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-item">HTML5</li>
+                <li class="skill-item">CSS3</li>
+                <li class="skill-item">JavaScript</li>
+                <li class="skill-item">React</li>
+                <li class="skill-item">UI/UX Design</li>
+                <li class="skill-item">Accessibility</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- TEAM 4: PROJECTS SECTION -->
+    <div class="section-label">Team 4: Projects Section</div>
+    <section id="team4-projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project-card">
+            <h3 class="project-title">E-commerce Website</h3>
+            <p class="project-description">A responsive online store with product filtering and cart functionality.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-description">A weather forecast application that displays current and future weather conditions.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">APIs</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Blog Platform</h3>
+            <p class="project-description">A minimal blogging platform with comment functionality.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">React</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </section>
+
+    <!-- TEAM 5: GALLERY/CONTACT SECTION -->
+    <div class="section-label">Team 5: Gallery/Contact Section</div>
+    <section id="team5-gallery-contact" class="gallery-contact-section">
+        <div id="gallery" class="gallery-container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1" class="gallery-img">
+                    <div class="image-caption">Project 1 Preview</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2" class="gallery-img">
+                    <div class="image-caption">Project 2 Preview</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3" class="gallery-img">
+                    <div class="image-caption">Project 3 Preview</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+4" alt="Project 4" class="gallery-img">
+                    <div class="image-caption">Project 4 Preview</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact-container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-textarea" placeholder="Your Message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <p>AFD - CSS Fundamentals Team Game</p>
+    </footer>
+</body>
+</html>

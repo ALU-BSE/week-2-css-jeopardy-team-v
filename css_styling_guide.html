@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Reference Guide</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            border-bottom: 3px solid #4a6fa5;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        /* Color Palette Section */
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .color-box {
+            width: 150px;
+            text-align: center;
+        }
+
+        .color-sample {
+            height: 80px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .color-value {
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        /* Example Styles Section */
+        .example {
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .example-header {
+            background-color: #f0f4f8;
+            padding: 10px 15px;
+            font-weight: bold;
+            color: #4a6fa5;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .example-container {
+            padding: 20px;
+            background-color: white;
+        }
+
+        .example-code {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Before/After Demos */
+        .before-after {
+            display: flex;
+            gap: 20px;
+        }
+
+        .before, .after {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .before {
+            background-color: #fff;
+        }
+
+        .after {
+            background-color: #f8f9fa;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #4a6fa5;
+        }
+
+        /* Specific Examples */
+        .plain-button {
+            border: none;
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .styled-button {
+            border: none;
+            background-color: #4a6fa5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .styled-button:hover {
+            background-color: #2c3e50;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .plain-text {
+            color: black;
+        }
+
+        .styled-text {
+            color: #4a6fa5;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .plain-link {
+            color: blue;
+        }
+
+        .styled-link {
+            color: #4a6fa5;
+            text-decoration: none;
+            font-weight: bold;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .styled-link:hover {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+        }
+
+        .plain-box {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .styled-box {
+            border: 2px solid #4a6fa5;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: rgba(74, 111, 165, 0.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .plain-header {
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        .styled-header {
+            background: linear-gradient(135deg, #4a6fa5, #2c3e50);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .plain-image {
+            max-width: 100px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .styled-image {
+            max-width: 100px;
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Tips Section */
+        .tips-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tips-list li::before {
+            content: "•";
+            color: #4a6fa5;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Styling Reference Guide</h1>
+
+    <div class="section">
+        <h2>Recommended Color Palette</h2>
+        <p>Use these colors consistently across your sections for a cohesive look:</p>
+        <div class="color-palette">
+            <div class="color-box">
+                <div class="color-sample" style="background-color: #4a6fa5;"></div>
+                <div class="color-name">Primary Blue</div>
+                <div class="color-value">#4a6fa5</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background-color: #2c3e50;"></div>
+                <div class="color-name">Dark Blue</div>
+                <div class="color-value">#2c3e50</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background-color: #e7f0fd;"></div>
+                <div class="color-name">Light Blue</div>
+                <div class="color-value">#e7f0fd</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background-color: #ff7e5f;"></div>
+                <div class="color-name">Accent Orange</div>
+                <div class="color-value">#ff7e5f</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background-color: #ffffff;"></div>
+                <div class="color-name">White</div>
+                <div class="color-value">#ffffff</div>
+            </div>
+        </div>
+        <p><strong>Tip:</strong> Use dark blue for important headings, primary blue for links and buttons, light blue for backgrounds and highlights, and accent orange sparingly for important elements.</p>
+    </div>
+
+    <div class="section">
+        <h2>Text Styling Examples</h2>
+
+        <div class="example">
+            <div class="example-header">Heading Styles</div>
+            <div class="example-container">
+                <div class="before-after">
+                    <div class="before">
+                        <div class="label">Before</div>
+                        <h3 class="plain-text">Section Title</h3>
+                    </div>
+                    <div class="after">
+                        <div class="label">After</div>
+                        <h3 class="styled-text">Section Title</h3>
+                    </div>
+                </div>
+                <div class="example-code">/* Styled heading */
+.section-title {
+    color: #4a6fa5;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #4a6fa5;
+}</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-header">Link Styling</div>
+            <div class="example-container">
+                <div class="before-after">
+                    <div class="before">
+                        <div class="label">Before</div>
+                        <a href="#" class="plain-link">Click here</a>
+                    </div>
+                    <div class="after">
+                        <div class="label">After</div>
+                        <a href="#" class="styled-link">Click here</a>
+                    </div>
+                </div>
+                <div class="example-code">/* Interactive link with hover effect */
+.styled-link {
+    color: #4a6fa5;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.styled-link:hover {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Button & Interactive Element Examples</h2>
+
+        <div class="example">
+            <div class="example-header">Button Styling</div>
+            <div class="example-container">
+                <div class="before-after">
+                    <div class="before">
+                        <div class="label">Before</div>
+                        <button class="plain-button">Submit</button>
+                    </div>
+                    <div class="after">
+                        <div class="label">After</div>
+                        <button class="styled-button">Submit</button>
+                    </div>
+                </div>
+                <div class="example-code">/* Styled button with hover effects */
+.submit-button {
+    border: none;
+    background-color: #4a6fa5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2c3e50;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Container & Box Styling</h2>
+
+        <div class="example">
+            <div class="example-header">Content Box Styling</div>
+            <div class="example-container">
+                <div class="before-after">
+                    <div class="before">
+                        <div class="label">Before</div>
+                        <div class="plain-box">This is a content box with plain styling.</div>
+                    </div>
+                    <div class="after">
+                        <div class="label">After</div>
+                        <div class="styled-box">This is a content box with enhanced styling.</div>
+                    </div>
+                </div>
+                <div class="example-code">/* Styled content box */
+.content-box {
+    border: 2px solid #4a6fa5;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: rgba(74, 111, 165, 0.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}</div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example-header">Header Section Styling</div>
+            <div class="example-container">
+                <div class="before-after">
+                    <div class="before">
+                        <div class="label">Before</div>
+                        <div class="plain-header">Header Content</div>
+                    </div>
+                    <div class="after">
+                        <div class="label">After</div>
+                        <div class="styled-header">Header Content</div>
+                    </div>
+                </div>
+                <div class="example-code">/* Styled header with gradient */
+.header-section {
+    background: linear-gradient(135deg, #4a6fa5, #2c3e50);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Image Styling</h2>
+
+        <div class="example">
+            <div class="example-header">Profile Image Styling</div>
+            <div class="example-container">
+                <div class="before-after">
+                    <div class="before">
+                        <div class="label">Before</div>
+                        <img src="https://via.placeholder.com/100" alt="Profile" class="plain-image">
+                    </div>
+                    <div class="after">
+                        <div class="label">After</div>
+                        <img src="https://via.placeholder.com/100" alt="Profile" class="styled-image">
+                    </div>
+                </div>
+                <div class="example-code">/* Circular profile image */
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Helpful Styling Tips</h2>
+
+        <ul class="tips-list">
+            <li><strong>Consistent Spacing:</strong> Use the same margin and padding values throughout your section (e.g., multiples of 5px or 8px).</li>
+            <li><strong>Visual Hierarchy:</strong> Use font size, color, and weight to create importance (bigger, bolder, darker = more important).</li>
+            <li><strong>Interactive Elements:</strong> Always provide visual feedback on hover (color change, scaling, underlining).</li>
+            <li><strong>Transitions:</strong> Add transitions to all hover effects with <code>transition: all 0.3s ease;</code> for smoother animations.</li>
+            <li><strong>Box Shadows:</strong> Use subtle shadows (<code>box-shadow: 0 2px 5px rgba(0,0,0,0.1);</code>) to add depth.</li>
+            <li><strong>Border-radius:</strong> Rounded corners (8-10px) work well for containers, while smaller radius (3-5px) works for buttons.</li>
+            <li><strong>Text Color Contrast:</strong> Ensure text has enough contrast with its background (dark text on light backgrounds, light text on dark backgrounds).</li>
+            <li><strong>Decorative Elements:</strong> Use borders, especially bottom borders, to create separation and visual interest.</li>
+            <li><strong>Be Consistent:</strong> Use the same styling patterns for similar elements across your section.</li>
+        </ul>
+    </div>
+</body>
+</html>

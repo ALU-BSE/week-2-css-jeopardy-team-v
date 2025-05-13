@@ -1,0 +1,27 @@
+/* Team 2: Navigation Section CSS */
+/* Style the navigation area with your team's creativity! */
+
+/* Example starter styles */
+.nav-section {
+    margin-bottom: 20px;
+    /* TODO: Add your styles here */
+}
+
+.nav-list {
+    list-style-type: none;
+    /* TODO: Add your styles here */
+}
+
+.nav-item {
+    /* TODO: Add your styles here */
+}
+
+.nav-link {
+    text-decoration: none;
+    /* TODO: Add your styles here */
+}
+
+/* Don't forget to add hover effects! */
+.nav-link:hover {
+    /* TODO: Add your styles here */
+}
