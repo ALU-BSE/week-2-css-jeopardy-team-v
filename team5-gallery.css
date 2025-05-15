@@ -4,29 +4,58 @@
 /* Example starter styles */
 .gallery-contact-section {
     /* TODO: Add your styles here */
+     
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 40px;
+    background: #fafafa;
 }
 
 .gallery-container {
-    margin-bottom: 20px;
     /* TODO: Add your styles here */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .gallery-item {
-    margin-bottom: 15px;
+    
     /* TODO: Add your styles here */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.5s;
 }
 
 .gallery-img {
-    max-width: 100%;
-    /* TODO: Add your styles here */
+ /* TODO: Add your styles here */
+   max-width: 100%;
+   height: auto;
+   display: block;
+   border-bottom: 2px solid #eee;
 }
 
 .image-caption {
     /* TODO: Add your styles here */
+   font-size: 10px;
+   text-align: center;
+   margin-top: 8px;          
+   padding: 4px;   
 }
 
 .contact-container {
     /* TODO: Add your styles here */
+    
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f5f5f5;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   font-family: Arial, sans-serif;
 }
 
 .form-group {
@@ -40,19 +69,50 @@
 }
 
 .form-input, .form-textarea {
-    width: 100%;
-    padding: 8px;
     /* TODO: Add your styles here */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s
 }
 
 .submit-button {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     /* TODO: Add your styles here */
 }
 
 /* Don't forget to add hover effects! */
 .submit-button:hover {
     /* TODO: Add your styles here */
+    cursor: pointer;
+   background-color: rgba(74, 111, 165, 0.05);
+    transform: translateY(-2px);
+    
+
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .gallery-contact-section {
+    flex-direction: column;
+    padding: 20px;
+    }
+
+    .gallery-container,
+    .contact-container {
+    flex: 1 1 100%;
+    }
 }
